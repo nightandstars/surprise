@@ -24,6 +24,7 @@ function revealPage() {
     document.getElementById("reveal-page-button").className = "hidden"
     document.getElementById("svg-container").className = ""
     document.getElementById("birthday-cake-img").className = ""
+    birthdaySong();
     balloons();
     fireworks();
     setTimeout(showReplayButton, 10000)
@@ -33,11 +34,17 @@ function showReplayButton(){
     document.getElementById("replay-button").className = ""
 }
 
+function birthdaySong(){
+    const audio = new Audio("assets/happy-birthday-368842.mp3");
+    audio.play()
+}
+
 document.getElementById("replay-button").addEventListener("click", replayAnimation)
 
 function replayAnimation() {
     balloons();
     fireworks();
+    birthdaySong();
 }
 
 //balloons floating up animation
