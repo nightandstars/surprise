@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Surprise</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="surprise.css">
+</head>
+<body>
+
+<div id="svg-container" class="hidden">
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Define the curved path for the text -->
+        <path id="textCurve" d="M 100 280 Q 400 120 700 280" stroke="none" fill="none"/>
+    </defs>
+
+    <!-- Text following the curved path -->
+    <text font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle">
+        <textPath href="#textCurve" startOffset="50%">
+            <tspan fill="#ff0000">J</tspan><tspan fill="#ff4500">O</tspan><tspan fill="#ffa500">Y</tspan><tspan fill="#ffff00">E</tspan><tspan fill="#9acd32">U</tspan><tspan fill="#00ff00">X</tspan><tspan fill="#00ffff"> </tspan><tspan fill="#0080ff">A</tspan><tspan fill="#4169e1">N</tspan><tspan fill="#8a2be2">N</tspan><tspan fill="#da70d6">I</tspan><tspan fill="#ff1493">V</tspan><tspan fill="#ff69b4">E</tspan><tspan fill="#ff0000">R</tspan><tspan fill="#ff4500">S</tspan><tspan fill="#ffa500">A</tspan><tspan fill="#ffff00">I</tspan><tspan fill="#9acd32">R</tspan><tspan fill="#00ff00">E</tspan><tspan fill="#00ffff"> </tspan><tspan fill="#0080ff">!</tspan>
+        </textPath>
+    </text>
+</svg>
+    <h1 class="rainbowText">Morgane</h1>
+</div>
+
+<div id="reveal-page-button" class="">
+    <button>Clique Moi !</button>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>

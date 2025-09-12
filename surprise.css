@@ -1,0 +1,33 @@
+#svg-container, #name-container {
+    overflow: auto;
+}
+
+svg{
+    margin-top: -15%;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin-top: -5%;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #f2f3f4;
+    font-family: Arial, sans-serif;
+}
+
+#reveal-page-button{
+    text-align: center;
+    background-color: aquamarine;
+    button{
+        font-size: 45px;
+        padding: 10px;
+    }
+}
+
+.hidden{
+    display: none;
+}
