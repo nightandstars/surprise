@@ -23,12 +23,26 @@ document.getElementById("reveal-page-button").addEventListener("click", revealPa
 function revealPage() {
     document.getElementById("reveal-page-button").className = "hidden"
     document.getElementById("svg-container").className = ""
+    document.getElementById("birthday-cake-img").className = ""
     balloons();
+    fireworks();
+    setTimeout(showReplayButton, 10000)
+}
+
+function showReplayButton(){
+    document.getElementById("replay-button").className = ""
+}
+
+document.getElementById("replay-button").addEventListener("click", replayAnimation)
+
+function replayAnimation() {
+    balloons();
+    fireworks();
 }
 
 //balloons floating up animation
 function balloons(){
-    const duration = 5 * 1000;
+    const duration = 8 * 1000;
 const animationEnd = Date.now() + duration;
 let skew = 1;
 const scalar = 6;
@@ -67,3 +81,26 @@ function randomInRange(min, max) {
 }());
 }
 
+//fireworks animation
+function fireworks() {
+    const duration = 10 * 1000;
+    const animationEnd = Date.now() + duration;
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+    function randomInRange(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    const interval = setInterval(function() {
+        const timeLeft = animationEnd - Date.now();
+
+        if (timeLeft <= 0) {
+            return clearInterval(interval);
+        }
+
+        const particleCount = 50 * (timeLeft / duration);
+        // since particles fall down, start a bit higher than random
+        confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } });
+        confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
+    }, 250);
+}
