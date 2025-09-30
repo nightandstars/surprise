@@ -1,4 +1,14 @@
 
+window.addEventListener("load", function (){
+    const queryParams = new URLSearchParams(window.location.search);
+    if (queryParams.has("name")){
+        document.getElementById("name").innerHTML = queryParams.get("name");
+    }
+});
+
+
+
+
 //rainbow colors the name
 window.addEventListener("load", function() {
     const elements = document.getElementsByClassName("rainbowText");
@@ -44,7 +54,6 @@ document.getElementById("replay-button").addEventListener("click", replayAnimati
 function replayAnimation() {
     balloons();
     fireworks();
-    birthdaySong();
 }
 
 //balloons floating up animation
