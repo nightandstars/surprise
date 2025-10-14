@@ -1,13 +1,10 @@
-
+//changes name of the birthday person to the one specified in the query parameter if one has been specified
 window.addEventListener("load", function (){
     const queryParams = new URLSearchParams(window.location.search);
     if (queryParams.has("name")){
         document.getElementById("name").innerHTML = queryParams.get("name");
     }
 });
-
-
-
 
 //rainbow colors the name
 window.addEventListener("load", function() {
@@ -28,6 +25,7 @@ function generateRainbowText(element) {
     }
 }
 
+//makes happy birthday elements visible, starts song and animations, shows replay button after delay
 document.getElementById("reveal-page-button").addEventListener("click", revealPage)
 
 function revealPage() {
@@ -44,6 +42,7 @@ function showReplayButton(){
     document.getElementById("replay-button").className = ""
 }
 
+//starts playing audio song
 function birthdaySong(){
     const audio = new Audio("assets/happy-birthday-368842.mp3");
     audio.play()
@@ -51,6 +50,7 @@ function birthdaySong(){
 
 document.getElementById("replay-button").addEventListener("click", replayAnimation)
 
+//replays ballons and fireworks
 function replayAnimation() {
     balloons();
     fireworks();
@@ -62,6 +62,7 @@ function balloons(){
 const animationEnd = Date.now() + duration;
 let skew = 1;
 const scalar = 6;
+    //emoji showing up on screen
 const balloon = confetti.shapeFromText({ text: '🎈', scalar });
 let frameCount = 0;
 
