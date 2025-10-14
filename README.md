@@ -1,19 +1,19 @@
-# Simple Happy Birthday Website
+# Simple Site Joyeux Anniversaire
 
-Simple website to wish happy birthday to your friends/family/yourself. 
+Un site web assez simple pour souhaiter joyeux anniversaire à vos amis/votre famille/vous même
 
-## How it works
+## Comment ça marche ?
 
-1. To specify the name of the person, enter a query parameter as such: ?name=nameOfThePerson (?name=John) --> https://nightandstars.github.io/surprise/?name=John
-   1. You can also change it directly in the code
-2. Make sure to press Enter after modifying the URL
-3. Make sure to allow sounds to be played and turn the volume up
-4. Click on the nice little "Click Me" button
-5. Enjoy!
-6. At the end you will get a "replay animation" at the bottom of the page
+1. Pour spécifier le prénom de la personne, entrez un query parameter de cette manière : ?name=nameOfThePerson (?name=John) --> https://nightandstars.github.io/surprise/?name=John
+   1. Vous pouvez également changer le prénom directement dans le code dans index.html
+2. Assurez-vous d'appuyer sur Entrer après avoir modifié l'URL
+3. Assurez-vous d'avoir autoriser l'audio, et augmenter le volume
+4. Cliquez sur le joli bouton "Clique moi !"
+5. Profitez !
+6. Un bouton "rejouer l'animation" apparaitra en bas de page
 
-## What I used
+## Ce que j'ai utilisé
 
-[Canvas-Confetti](https://github.com/catdad/canvas-confetti) - mix of the emoji and snow examples to create the balloon animation
+[Canvas-Confetti](https://github.com/catdad/canvas-confetti) - mix de l'exemple de neige et d'emoji pour créer l'animation des ballons
 
 [Pixabay Happy Birthday Music](https://pixabay.com/fr/music/search/birthday/)
