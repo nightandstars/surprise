@@ -41,3 +41,83 @@ html, body{
 #birthday-cake-img{
     text-align: center;
 }
+
+@media screen and (max-width: 480px) {
+    #svg-container {
+        height: 18vh;
+    }
+    
+    h1 {
+        font-size: 14vw;
+        margin-top: 1vh;
+    }
+    
+    #birthday-cake-img img {
+        max-height: 50vh;
+    }
+    
+    #reveal-page-button button {
+        font-size: 28px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #svg-container {
+        height: 20vh;
+    }
+    
+    h1 {
+        font-size: 12vw; 
+        margin-top: 2vh;
+    }
+    
+    #birthday-cake-img img {
+        max-height: 55vh;
+        max-width: 85vw;
+    }
+    
+    #reveal-page-button {
+        margin-top: 8rem;
+    }
+    
+    #reveal-page-button button {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-height: 767px) and (orientation: landscape) {
+    #svg-container {
+        height: 18vh;
+    }
+    
+    h1 {
+        font-size: 6vh;
+        margin-top: 1vh;
+    }
+    
+    #birthday-cake-img img {
+        max-height: 40vh;
+    }
+}
+
+#svg-container {
+    height: 25vh;
+}
+
+svg {
+    margin-top: 0;
+    height: 100%;
+}
+
+h1 {
+    font-size: 10vh;
+    margin-top: 2vh;
+}
+
+#birthday-cake-img img {
+    max-height: 50vh;
+    max-width: 90vw;   
+    height: auto;
+    width: auto;
+}
