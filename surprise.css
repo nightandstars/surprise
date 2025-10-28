@@ -6,6 +6,7 @@ svg{
     margin-top: -18%;
 }
 
+
 h1{
     text-align: center;
     font-size: 80px;
@@ -23,6 +24,7 @@ html, body{
 #reveal-page-button{
     text-align: center;
     margin-top: 10rem;
+    
     button{
         font-size: 45px;
         padding: 10px;
